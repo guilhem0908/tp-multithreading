@@ -3,8 +3,10 @@ name = "tp-multithreading"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.14"
-dependencies = []
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+]
 
 [project.scripts]
 tp-multithreading = "tp_multithreading:main"
@@ -15,5 +17,5 @@ build-backend = "uv_build"
 
 [dependency-groups]
 dev = [
-    "pre-commit>=4.7.0",
+    "pre-commit",
 ]
